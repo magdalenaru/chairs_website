@@ -1,30 +1,112 @@
 body {
-  margin-top: 0;
+  width: 1200px; 
+  font-family: 'Raleway', sans-serif;
 }
 
-div {
-  width: 960px;
-  background-color: lightblue;
-  background-position: center;
-  border: 2px solid red;
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
+.wrapper {
+  background-color: black; 
+  color: white;
+  height: 35px; 
+}
+
+.container {
+  width: 1050px;
+  margin: 0 auto;
+  position: center;
+}
+
+.nav_body {
+  height: 35px;
+}
+
+span {
+  float: left; 
+  line-height: 35px;
 }
 
 ul {
-  list-style: none;
-  border: 1px solid blue;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-right: 25px;
-  margin-left: 40px;
-  padding: 0;
+  list-style: none; 
+  float: right;
+  display: inline-block;
+  margin: 0;
 }
 
 li {
-  display: block;
-  border: 1px solid black;
+  float: left;
   margin: 10px;
-  padding: 5px;
+}
+
+header {
+  height: 500px;
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(204,202,204,1) 99%, rgba(237,237,237,1) 100%);
+}
+
+
+.main_article {
+  width: 960px; 
+  height: 350px;
+  float: right;
+  padding-top: 130px;
+}
+
+#chair {
+  float: left;
+  width: 455px;
+  height: 350px;
+}
+
+.main_article h1, p {
+  float: right;
+  text-align: center;
+  width: 505px;
+}
+
+h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+#left_arrow #right_arrow {
+  font-size: 32px;
+  color: green;
+}
+
+p {
+  font-size: 12px;
+}
+
+input {
+  color: blue;
+  border: 5px solid red;
+}
+
+input::placeholder {
+  color: red;
+}
+
+input:focus {
+  outline: 0;
+  border-color: blue;
+}
+
+textarea {
+  resize: none;
+}
+
+.check {
+  margin: 20px;
+}
+
+.check:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: blue;
+}
+
+.check:checked:after {
+  background-image: url("../images/form_ok.jpg")
 }
